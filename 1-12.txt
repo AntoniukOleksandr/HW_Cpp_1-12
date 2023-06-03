@@ -1,0 +1,133 @@
+ /*задача 15
+дана полоща кола S. Знайти діаметр D і довжину кола L,
+якщо L=π*D, S=π*D*D/4. π=3.14
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  double S, D, L;
+  const double pi = 3.14;
+
+  cout << "Запишіть площу кола: ";
+  cin >> S;
+
+  D = 2 * sqrt(S / pi);
+  L = pi * D;
+
+  cout << "Діаметр кола: " << D << endl;
+  cout << "Довжина кола: " << L << endl;
+
+  return 0;
+}*/
+
+//задача 4
+//дано периметр кола d. Знайти його довжину L=pi*d.
+
+/*#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  double d, L;
+  const double pi = 3.14;
+
+  cout << "Запишіть діаметр кола: ";
+  cin >> d;
+
+  L = pi * d;
+
+  cout << "Довжина кола: " << L << endl;
+
+  return 0;
+}*/
+
+/*задача 7. Знайти довжину кола L та S площу заданого радиусу R:
+L=2*pi*R; S=pi*R*R*/
+
+/*#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main (){
+    const double pi=3.14;
+    double S, R, L;
+    
+    cout<<"Запишіть радіус кола: ";
+    cin>> R;
+    
+    L=2*pi*R; 
+    S=pi*R*R;
+    
+    cout<<"Довжина кола: "<<L<<endl;
+    cout<<"Площа кола: "<<S<<endl;
+
+    return 0;
+}*/
+
+
+/*задача 13. Дано два кола з загальним центром та радіусами R1 та R2 (R1>R2).
+Знайти площі кіл S1 та S2, а також площу S3 кільця, зовнішній радіус
+якого дорівнює R1, а внутрішній дортвнює R2:
+S1=pi*R1*R1, S2=pi*R2*R2, S3=S1-S2. pi=3.14
+
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float R1, R2, S1, S2, S3, pi=3.14;
+
+    cout << "Введіть значення радіусів R1 та R2 (R1 > R2): ";
+    cin >> R1 >> R2;
+
+    // !!перевіряєм чи вірно введені дані
+    if (R1 <= R2) {
+        cout << "Ви ввели невірні дані" << endl;
+        return 1;
+    }
+
+  
+    S1 = pi * R1 * R1;
+    S2 = pi * R2 * R2;
+    
+    S3 = S1-S2;
+
+  
+    cout << "Площа кола S1 = " << S1 << endl;
+    cout << "Площа кола S2 = " << S2 << endl;
+    cout << "Площа кільця S3 = " << S3 << endl;
+
+    return 0;
+}*/
+
+/*задача 14 . Дано двожину кола L. Знайти радіус R та площу S, якщо
+L=2*pi*R, S=pi*R*R.*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main (){
+    const double pi=3.14;
+    double S, R, L;
+    
+    
+    cout<<"Введіть довжину кола L: ";
+    cin>>L;
+    
+    R=L/2*pi;
+    S=pi*R*R;
+    
+    cout<<"Радіус кола R: "<<R<<endl;
+    cout<<"Площа кола S: "<<S<<endl;
+    
+    return 0;
+    
+}
+    
